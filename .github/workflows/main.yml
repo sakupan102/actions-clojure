@@ -47,3 +47,4 @@ jobs:
       - run: lein run -m  core.clj
         env:
           ENV_1: ${{ github.event }}
+      - run: pwd    
