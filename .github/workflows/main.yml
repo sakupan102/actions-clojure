@@ -47,6 +47,6 @@ jobs:
       - run: |
           ls
           pwd
-        env: 
-          ENV_1: ${{ github.event }}
+        #env: 
+        #  ENV_1: ${{ github.event }}
       - run: pwd    
