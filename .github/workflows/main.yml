@@ -45,8 +45,7 @@ jobs:
       - name: Get boot version
         run: boot -V
       - run: |
-          ls
-          pwd
-        #env: 
-        #  ENV_1: ${{ github.event }}
+          echo "ths is env=$ENV_1"
+        env: 
+          ENV_1: hashito
       - run: pwd    
