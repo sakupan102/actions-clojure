@@ -46,7 +46,7 @@ jobs:
         run: boot -V
       - run: |
           cd clojure1
-          lein run -m  core.clj
+          pwd
         env: 
           ENV_1: ${{ github.event }}
       - run: pwd    
