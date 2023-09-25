@@ -45,7 +45,7 @@ jobs:
       - name: Get boot version
         run: boot -V
       - run: |
-          cd clojure1
+          ls
           pwd
         env: 
           ENV_1: ${{ github.event }}
