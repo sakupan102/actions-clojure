@@ -47,5 +47,5 @@ jobs:
       - run: |
           lein run -m clojure1.core
         env: 
-          ENV_1: ${{ github.event.sender.login }}
+          ENV_1: ${{ github.event.commits[0].message }}
       - run: pwd    
