@@ -47,5 +47,5 @@ jobs:
       - run: |
           lein run -m clojure1.core
         env: 
-          ENV_1: hashito
+          ENV_1: ${{ github.event }}
       - run: pwd    
