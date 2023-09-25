@@ -44,7 +44,9 @@ jobs:
         
       - name: Get boot version
         run: boot -V
-      #- run: lein run -m  core.clj
-       # env:
-       #   ENV_1: ${{ github.event }}
+      - run: |
+          cd clojure1
+          lein run -m  core.clj
+        env: 
+          ENV_1: ${{ github.event }}
       - run: pwd    
