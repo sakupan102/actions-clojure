@@ -6,5 +6,5 @@
   []
   (println "Hello, World!"))
 
-(println (env :ENV_1))
+(println env)
 
