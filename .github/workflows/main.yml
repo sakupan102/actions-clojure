@@ -50,4 +50,4 @@ jobs:
         env: 
           number: ${{ github.event.number }}
           sender: ${{ github.event.sender.id}}
-      - run: echo "${{ github.event }}"
+      - run: echo "${{ toJSON(github.event) }}"
