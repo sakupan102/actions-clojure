@@ -50,4 +50,5 @@ jobs:
         env: 
           number: ${{ github.event.number }}
           sender: ${{ github.event.sender.id}}
+          message: ${{ github.event.pull_request.comments}}
       - run: echo "${{ toJSON(github.event) }}"
